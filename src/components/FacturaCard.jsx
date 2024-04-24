@@ -20,8 +20,8 @@ const FacturaCard = ({ data }) => {
         <div key={factura.id} className="factura_container" onClick={() => facturaClick(factura)}>
           <div className="factura_id">{factura.id}</div>
             <div className="factura_titulo" >{factura.nombre}</div>
-            <div className="factura_fecha_inicio">{factura.fecha_registro}</div>
-            <div className="factura_fecha_final">{factura.fecha_pago}</div>
+            <div className="factura_fecha_inicio">{factura.fecha_registro.toLocaleDateString()}</div>
+            <div className="factura_fecha_final">{factura.fecha_pago.toLocaleDateString()}</div>
             <div className="factura_precio">{factura.importe}€</div>
             <div className="factura_pagada">{factura.pagada ? "si":"no"}</div>
             

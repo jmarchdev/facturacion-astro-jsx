@@ -1,10 +1,10 @@
 
-let globalFacturasArray = [
+const globalFacturasArray = [
     {
         id: 1,
         nombre: "ejemplo1",
-        fecha_registro: "111",
-        fecha_pago: "122",
+        fecha_registro: new Date("2022-01-11"),
+        fecha_pago: new Date("2022-01-22"),
         importe: 12,
         pagada: false
     }
