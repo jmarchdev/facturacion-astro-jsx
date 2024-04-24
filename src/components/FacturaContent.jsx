@@ -17,7 +17,7 @@ export default function ModalContentFactura({ onClose, data }) {
           </div>
           <div className="mt-4">
             <p className="text-sm text-gray-600">Fecha Registro: {data.fecha_registro}</p>
-            <p className="text-sm text-gray-600">{data.pagada ? "Fecha Pago: "+data.fecha_pago:""}</p>
+            <p className="text-sm text-gray-600">{data.pagada ? "Fecha Pago: "+data.fecha_pago:"Fecha Pago: ---"}</p>
           </div>
         </div>
         <button onClick={onClose} className="btnCerrarModal">

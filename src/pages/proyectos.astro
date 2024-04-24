@@ -2,12 +2,19 @@
 import Layout from "../layouts/Layout.astro";
 
 import ProyectoCard from "../components/ProyectoCard";
+import {
+  getGlobalArrayProyectos,
+  addToGlobalArrayProyectos,
+  removeFromGlobalArrayProyectos,
+} from "../components/data";
+
+const proyectosArray = getGlobalArrayProyectos();
 ---
 
 <Layout title="Proyectos">
   <main class="py-2 px-2 mx-auto max-w-full lg:py-0 lg:px-6">
     <div class="mx-auto mb-6 lg:mb-10">
-      <ProyectoCard data={proyectos} client:load />
+      <ProyectoCard data={proyectosArray} client:load />
     </div>
   </main>
 </Layout>
