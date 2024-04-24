@@ -17,7 +17,7 @@ const ProyectoCard = ({data}) => {
 
     return (
         <div className="proyectos_container">
-            <div className="proyectos_viewmodel" onClick={toggleViewMode}><img src="public\aplicaciones.svg" className="proyectos_changer"/> Cambiar vista </div>
+            <div className="proyectos_viewmodel" onClick={toggleViewMode}><img src="..\aplicaciones.svg" className="proyectos_changer"/> Cambiar vista </div>
             <div className={`proyectos_array ${isListMode ? "proyectos_array_list" : "proyectos_array_grid"}`}> 
                 {proyectosArray}
             </div>
